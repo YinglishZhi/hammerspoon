@@ -25,17 +25,17 @@ else
     end
 end
 
-hsreload_keys = hsreload_keys or {{"cmd", "shift", "ctrl"}, "R"}
-if string.len(hsreload_keys[2]) > 0 then
-    hs.hotkey.bind(hsreload_keys[1], hsreload_keys[2], "Reload Configuration", function() hs.reload() end)
+hs_reload_keys = hs_reload_keys or {{"cmd", "shift", "ctrl"}, "R"}
+if string.len(hs_reload_keys[2]) > 0 then
+    hs.hotkey.bind(hs_reload_keys[1], hs_reload_keys[2], "Reload Configuration", function() hs.reload() end)
 end
 
 -- ModalMgr Spoon must be loaded explicitly, because this repository heavily relies upon it.
 hs.loadSpoon("ModalMgr")
 
 -- Define default Spoons which will be loaded later
-if not hspoon_list then
-    hspoon_list = {
+if not hammer_spoon_list then
+    hammer_spoon_list = {
         "AClock",
         "BingDaily",
         "CircleClock",
@@ -50,17 +50,17 @@ if not hspoon_list then
 end
 
 -- Load those Spoons
-for _, v in pairs(hspoon_list) do
+for _, v in pairs(hammer_spoon_list) do
     hs.loadSpoon(v)
 end
 
 ----------------------------------------------------------------------------------------------------
--- Then we create/register all kinds of modal keybindings environments.
+-- 创建/注册各个类型快捷键
 ----------------------------------------------------------------------------------------------------
--- Register windowHints (Register a keybinding which is NOT modal environment with modal supervisor)
-hswhints_keys = hswhints_keys or {"alt", "tab"}
-if string.len(hswhints_keys[2]) > 0 then
-    spoon.ModalMgr.supervisor:bind(hswhints_keys[1], hswhints_keys[2], 'Show Window Hints', function()
+-- 注册窗口提示（向模式管理器注册不是模式环境的键绑定）
+hs_window_hints_keys = hs_window_hints_keys or {"alt", "tab"}
+if string.len(hs_window_hints_keys[2]) > 0 then
+    spoon.ModalMgr.supervisor:bind(hs_window_hints_keys[1], hs_window_hints_keys[2], 'Show Window Hints', function()
         spoon.ModalMgr:deactivateAll()
         hs.hints.windowHints()
     end)

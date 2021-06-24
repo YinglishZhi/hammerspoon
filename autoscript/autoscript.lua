@@ -9,10 +9,9 @@ end
 
 
 function runAutoScripts()
-    hs.alert.show("Hello World!")
-    for key, cmd in ipairs(cmdArray) do
-        shell(cmd)
-    end
+    -- hs.alert.show("Hello World!")
+    print("hello world")
+    spoon.AClock:toggleShow();
 end
 
-hs.timer.doEvery(3600, runAutoScripts)
+hs.timer.doEvery(2, runAutoScripts)

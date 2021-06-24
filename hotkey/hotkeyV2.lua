@@ -37,7 +37,7 @@ hs.loadSpoon("ModalMgr")
 if not hammer_spoon_list then
     hammer_spoon_list = {
         "AClock",
-        "BingDaily",
+        -- "BingDaily",
         "CircleClock",
         "ClipShow",
         "CountDown",

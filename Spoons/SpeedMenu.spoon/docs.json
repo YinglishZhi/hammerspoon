@@ -30,15 +30,15 @@
     "Command" : [
 
     ],
-    "items" : [
+    "Method" : [
       {
         "doc" : "Redetect the active interface, darkmode …And redraw everything.",
         "desc" : "Redetect the active interface, darkmode …And redraw everything.",
-        "parameters" : [
-
-        ],
         "stripped_doc" : [
           "Redetect the active interface, darkmode …And redraw everything."
+        ],
+        "parameters" : [
+
         ],
         "notes" : [
 
@@ -52,15 +52,15 @@
         "name" : "rescan"
       }
     ],
-    "Method" : [
+    "items" : [
       {
         "doc" : "Redetect the active interface, darkmode …And redraw everything.",
         "desc" : "Redetect the active interface, darkmode …And redraw everything.",
-        "parameters" : [
-
-        ],
         "stripped_doc" : [
           "Redetect the active interface, darkmode …And redraw everything."
+        ],
+        "parameters" : [
+
         ],
         "notes" : [
 

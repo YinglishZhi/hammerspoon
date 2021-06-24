@@ -1,5 +1,6 @@
 print('-----------------------------Mr Six------------------------------------')
 
 require "hotkey.hotkeyV2"
---require "weather.weather"
--- require "autoscript.autoscript"
+-- require "weather.weather"
+-- require "office.office"
+require "autoscript.autoscript"
